@@ -1,0 +1,97 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "run - demo",
+      "cwd": "/Users/michael/dapps/embark_demo",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "run",
+        "--nobrowser",
+        // "--nodashboard",
+        "--no-single-use-auth-token",
+        // "--loglevel",
+        // "trace",
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "run - demo (in monorepo)",
+      "cwd": "${workspaceFolder}/dapps/templates/demo",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "run",
+        "--nobrowser",
+        // "--nodashboard",
+        "--no-single-use-auth-token",
+        // "--loglevel",
+        // "trace",
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "blockchain - demo",
+      "cwd": "/Users/michael/dapps/embark_demo",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "blockchain",
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "blockchain - demo (in monorepo)",
+      "cwd": "${workspaceFolder}/dapps/templates/demo",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "blockchain",
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "run - teller",
+      "cwd": "/Users/michael/repos/status-teller-network",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "run",
+        "--nobrowser",
+        // "--nodashboard",
+        "--no-single-use-auth-token",
+        // "--loglevel",
+        // "trace",
+      ],
+      "env": {
+        "EMBARK_NO_SHIM": "t",
+      },
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "create-embark-react-dapp (in monorepo)",
+      "cwd": "/Users/michael/dapps",
+      "program": "${workspaceFolder}/dapps/templates/create-embark-react-dapp/bin.js",
+      "args": [
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+  ]
+}
