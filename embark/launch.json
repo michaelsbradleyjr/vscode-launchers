@@ -96,6 +96,18 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "test - dapps/tests/app (in monorepo)",
+      "cwd": "${workspaceFolder}/dapps/tests/app",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "test",
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "test - dapps/tests/contracts (in monorepo)",
       "cwd": "${workspaceFolder}/dapps/tests/contracts",
       "program": "${workspaceFolder}/packages/embark/bin/embark",
