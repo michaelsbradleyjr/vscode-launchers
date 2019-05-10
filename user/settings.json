@@ -1,0 +1,26 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.node.autoAttach": "on",
+  "debug.toolBarLocation": "docked",
+  "editor.fontFamily": "FiraCode-Retina",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80
+  ],
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "prettier.trailingComma": "all",
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "Alacritty.app",
+  "terminal.integrated.rendererType": "canvas",
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+  "workbench.editor.enablePreview": false,
+}

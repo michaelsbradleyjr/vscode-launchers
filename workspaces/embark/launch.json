@@ -41,6 +41,23 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "run - dapps/tests/contracts (in monorepo)",
+      "cwd": "${workspaceFolder}/dapps/tests/contracts",
+      "program": "${workspaceFolder}/packages/embark/bin/embark",
+      "args": [
+        "run",
+        "--nobrowser",
+        // "--nodashboard",
+        "--no-single-use-auth-token",
+        // "--loglevel",
+        // "trace",
+      ],
+      "autoAttachChildProcesses": true,
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "blockchain - demo",
       "cwd": "/Users/michael/dapps/embark_demo",
       "program": "${workspaceFolder}/packages/embark/bin/embark",
@@ -117,5 +134,15 @@
       "autoAttachChildProcesses": true,
       "sourceMaps": true
     },
+    {
+      "name": "Cockpit - Launch Chrome Debug",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/packages/embark-ui/src ",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    }
   ]
 }
