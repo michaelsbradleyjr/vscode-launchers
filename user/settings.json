@@ -16,7 +16,6 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "prettier.trailingComma": "all",
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "Alacritty.app",
   "terminal.integrated.rendererType": "canvas",
