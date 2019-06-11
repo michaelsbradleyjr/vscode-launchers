@@ -10,16 +10,16 @@
   "editor.fontFamily": "FiraCode-Retina",
   "editor.fontLigatures": true,
   "editor.minimap.enabled": false,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "terminal.explorerKind": "external",
-  "terminal.external.osxExec": "Alacritty.app",
-  "terminal.integrated.rendererType": "canvas",
-  "window.zoomLevel": -1,
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Oceanic Next (dimmed bg)",
   "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vscode-icons"
 }
